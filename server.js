@@ -19,12 +19,12 @@ app.use((req, res, next) => {
 	});
 	next();
 });
-
-app.use((req,res,next) => {
-	res.render('maintainence', {
-		pageTitle: 'under Maintainence! sorry'
-	});
-});
+/* Only for Maintainance */
+// app.use((req,res,next) => {
+// 	res.render('maintainence', {
+// 		pageTitle: 'under Maintainence! sorry'
+// 	});
+// });
 
 // express static middleware
 app.use(express.static(__dirname + '/public'));
